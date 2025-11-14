@@ -47,7 +47,7 @@
   layer-type: 'line'
   url: './data/WhenRunsRunHot_1.geojson'
   paint:
-    line-width: 3
+    line-width: 6
     line-color:
       - interpolate
       - - linear
@@ -69,7 +69,7 @@
       - -3.595
       - '#d73027'
   legend:
-    title: 'When Runs Run Hot – TDSv1'
+    title: 'Daytime Thermal Stress'
     type: 'line'
     items:
       - label: '-10.36 to -9.23'
