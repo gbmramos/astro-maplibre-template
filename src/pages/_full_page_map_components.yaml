@@ -49,11 +49,11 @@
   paint:
     line-width: 3
     line-color:
-      # MapLibre expression: interpolate color based on TDSv1
-      - 'interpolate'
-      - ['linear']
-      - ['get', 'TDSv1']
-      # value,     color   (approximate QGIS-style blue→red ramp)
+      - interpolate
+      - - linear
+      - - get
+        - TDSv1
+      # value breakpoints & colors (match QGIS classes)
       - -10.361
       - '#313695'
       - -9.233
@@ -68,3 +68,21 @@
       - '#f46d43'
       - -3.595
       - '#d73027'
+  legend:
+    title: 'When Runs Run Hot – TDSv1'
+    type: 'line'
+    items:
+      - label: '-10.36 to -9.23'
+        color: '#313695'
+      - label: '-9.23 to -8.11'
+        color: '#4575b4'
+      - label: '-8.11 to -6.98'
+        color: '#74add1'
+      - label: '-6.98 to -5.85'
+        color: '#abd9e9'
+      - label: '-5.85 to -4.72'
+        color: '#fee090'
+      - label: '-4.72 to -3.60'
+        color: '#f46d43'
+      - label: '-3.60 to -2.47'
+        color: '#d73027'
