@@ -39,24 +39,10 @@
                 [-71.516, 37.936],
                 [-80.425, 37.936]]
 
-- id: 'pizza'
-  label: 'Pizza Places'
+- id: 'run'
+  label: 'When Runs Run Hot - 1'
   toggle: true
-  visible: true
+  visible: false
   data-type: 'geojson'
-  layer-type: 'circle'
-  url: 'https://data.cityofnewyork.us/resource/43nn-pn8j.geojson?cuisine_description=Pizza&$limit=10000'
-  paint:
-    circle-color: '#ff0000'
-    circle-radius: 5
-  mouseEvent:
-    - type: "click"
-      content:
-        - h1:
-            - str: "Feature Info"
-        - p:
-            - str: "Description"
-        - p:
-            - str: "Name: "
-            - property: "dba"
-              else: "N/A"
+  layer-type: 'line'
+  url: './data/WhenRunsRunHot_1.geojson'
