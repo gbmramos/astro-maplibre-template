@@ -46,3 +46,25 @@
   data-type: 'geojson'
   layer-type: 'line'
   url: './data/WhenRunsRunHot_1.geojson'
+  paint:
+    line-width: 3
+    line-color:
+      # MapLibre expression: interpolate color based on TDSv1
+      - 'interpolate'
+      - ['linear']
+      - ['get', 'TDSv1']
+      # value,     color   (approximate QGIS-style blue→red ramp)
+      - -10.361
+      - '#313695'
+      - -9.233
+      - '#4575b4'
+      - -8.106
+      - '#74add1'
+      - -6.978
+      - '#abd9e9'
+      - -5.850
+      - '#fee090'
+      - -4.722
+      - '#f46d43'
+      - -3.595
+      - '#d73027'
